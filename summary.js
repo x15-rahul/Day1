@@ -45,6 +45,19 @@ const bellaGot = 45;
 // console.log(Math.floor(mySecondNumber));
 // console.log(Math.ceil(mySecondNumber));
 
-for(i = 0; i < 10; i++){
-    console.log(Math.round(Math.random() * 10));
+// for(i = 0; i < 10; i++){
+//     console.log(Math.round(Math.random() * 10));
+// }
+
+const num1 = 45;
+const num2 = 20;
+
+function swapVariable(number1, number2){
+    let temp;
+    temp = number1;
+    number1 = number2;
+    number2 = temp;
+
+    console.log(number1, number2);
 }
+ swapVariable(num1, num2);
