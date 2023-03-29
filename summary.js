@@ -86,18 +86,52 @@ const numbers = [12, 4, 101, 43, 23, 105, 42, 58, 54, 10, 41, 102];
 // const maxValue = getMaxValue(numbers);
 // console.log(maxValue);
 
-function getMinValue(array){
-    // let minValue = array[0];
-    // for(i = 0; i < array.length; i++){
-    //     if(minValue > array[i]){
-    //         minValue = array[i];
-    //     } else {
-    //         continue;
-    //     }
-    // }
-    const minValue = Math.min(...array);
-    return minValue;
+// function getMinValue(array){
+//     let minValue = array[0];
+//     for(i = 0; i < array.length; i++){
+//         if(minValue > array[i]){
+//             minValue = array[i];
+//         } else {
+//             continue;
+//         }
+//     }
+//     const minValue = Math.min(...array);
+//     return minValue;
+// }
+
+// const minValue = getMinValue(numbers);
+// console.log(minValue);
+
+// function reversedWord(string){
+//     let newWord = '';
+//     const splitedWord = string.split(' ');
+//     for(let i = splitedWord.length - 1; i >= 0; i--){
+//         // newWord.concat(' ', splitedWord[i]);
+//         newWord = newWord.concat(' ',splitedWord[i]);
+//     }
+//     return newWord;
+// }
+// const reverseWord = reversedWord(myName);
+// console.log(reverseWord.trim());
+
+// function reversedString(string){
+//     let newString = '';
+//     for(let i = string.length - 1; i >= 0; i--){
+//         newString = newString.concat(string[i]);
+//     }
+//     return newString;
+// }
+// console.log(reversedString(myName));
+
+
+const number = 12;
+function getFibo(number){
+    const array = [0, 1];
+    for(i = 2; i <= number; i++){
+        array[i] = array[i - 1] + array[ i - 2 ];
+    }
+    return array;
 }
 
-const minValue = getMinValue(numbers);
-console.log(minValue);
+const fiboSeries = getFibo(number);
+console.log(fiboSeries);
