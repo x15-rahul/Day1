@@ -49,15 +49,55 @@ const bellaGot = 45;
 //     console.log(Math.round(Math.random() * 10));
 // }
 
-const num1 = 45;
-const num2 = 20;
+// let num1 = 45;
+// let num2 = 20;
 
-function swapVariable(number1, number2){
-    let temp;
-    temp = number1;
-    number1 = number2;
-    number2 = temp;
+// function swapVariable(number1, number2){
+//     let temp;
+//     temp = number1;
+//     number1 = number2;
+//     number2 = temp;
 
-    console.log(number1, number2);
+//     console.log(number1, number2);
+// }
+//  swapVariable(num1, num2);
+
+// [num1, num2] = [num2, num1];
+// console.log(num1, num2);
+
+// const numbers = [12, 101, 43, 23, 42, 58, 54, 41, 102];
+
+// function getMaxValue(array){
+//     let maxValue = array[0];
+//     for(const number of array){
+//         if(maxValue < number){
+//             maxValue = number
+//         } else {
+//             continue;
+//         }
+//     }
+//     return maxValue;
+
+    
+    
+// }
+
+const numbers = [12, 4, 101, 43, 23, 105, 42, 58, 54, 10, 41, 102];
+// const maxValue = getMaxValue(numbers);
+// console.log(maxValue);
+
+function getMinValue(array){
+    // let minValue = array[0];
+    // for(i = 0; i < array.length; i++){
+    //     if(minValue > array[i]){
+    //         minValue = array[i];
+    //     } else {
+    //         continue;
+    //     }
+    // }
+    const minValue = Math.min(...array);
+    return minValue;
 }
- swapVariable(num1, num2);
+
+const minValue = getMinValue(numbers);
+console.log(minValue);

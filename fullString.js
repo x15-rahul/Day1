@@ -1,8 +1,8 @@
 const sentence = '  Kalkolia Para. Shibrampur Road. Magura  ';
 const country = 'Bangladesh';
-console.log(sentence.toLowerCase().indexOf('kol'));
-console.log(sentence[4]);
-console.log(sentence.length);
+    console.log(sentence.toLowerCase().indexOf('kol'));
+    console.log(sentence[4]);
+    console.log(sentence.length);
 for(let i = 0; i < sentence.length; i++){
     console.log(sentence[i]);
 }
