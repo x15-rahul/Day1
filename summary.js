@@ -26,5 +26,25 @@ const nickName = ' Sumit ';
 // console.log(nickName);
 // console.log(nickName.trim());
 
-console.log(myName.substring(0, 5));
-console.log(myName.slice(0, 5));
+// console.log(myName.substring(0, 5));
+// console.log(myName.slice(0, 5));
+
+const myNumber = -10;
+const mySecondNumber = 3.01;
+const jimGot = 30;
+const bellaGot = 45;
+// const gap = Math.abs(jimGot - bellaGot);
+// if(gap <= 5 ){
+//     console.log('Jim and Bella can be friends');
+// } else {
+//     console.log('Jim and Bella stay apart');
+// }
+// console.log(Math.abs(Math.pow(myNumber, 3)));
+
+// console.log(Math.round(mySecondNumber));
+// console.log(Math.floor(mySecondNumber));
+// console.log(Math.ceil(mySecondNumber));
+
+for(i = 0; i < 10; i++){
+    console.log(Math.round(Math.random() * 10));
+}
